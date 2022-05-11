@@ -1,5 +1,11 @@
 - **@author z100**
 
-- **a repository to learn design pattern by coding implements with Java**
+- **@desc**
+
+  - **a repository to learn design pattern by coding implements with Java**
 
   
+
+
+- **reference resources**
+  - https://www.runoob.com/design-pattern/design-pattern-tutorial.html
