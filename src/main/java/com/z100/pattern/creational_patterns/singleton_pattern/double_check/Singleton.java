@@ -1,0 +1,36 @@
+package com.z100.pattern.creational_patterns.singleton_pattern.double_check;
+
+/**
+ * @author Z100
+ * @create 2022-05-07 23:01
+ * @desc lazy, double check
+ **/
+
+/**
+ * JDK 版本：JDK1.5 起
+ *
+ * 是否 Lazy 初始化：是
+ *
+ * 是否多线程安全：是
+ *
+ * 实现难度：较复杂
+ *
+ * @desc
+ * 描述：这种方式采用双锁机制，安全且在多线程情况下能保持高性能。
+ * getInstance() 的性能对应用程序很关键。
+ */
+public class Singleton {
+    private volatile static Singleton singleton;
+    private Singleton (){}
+
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    singleton = new Singleton();
+                }
+            }
+        }
+        return singleton;
+    }
+}
