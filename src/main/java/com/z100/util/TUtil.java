@@ -6,4 +6,7 @@ package com.z100.util;
  * @desc
  **/
 public class TUtil {
+    public static void method(){
+        System.out.println("占位工具类...");
+    }
 }
