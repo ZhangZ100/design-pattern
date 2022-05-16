@@ -9,3 +9,4 @@
 
 - **reference resources**
   - https://www.runoob.com/design-pattern/design-pattern-tutorial.html
+  - https://zhuanlan.zhihu.com/p/296319765
